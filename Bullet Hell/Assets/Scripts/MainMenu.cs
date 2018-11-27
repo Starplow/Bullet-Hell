@@ -21,4 +21,15 @@ public class MainMenu : MonoBehaviour {
     #endif
         
     }
+
+    public void BackToStart()
+    {
+        SceneManager.LoadScene("Startmenu");
+    }
+
+    public void TryAgain()
+    {
+        SceneManager.LoadScene("Level01");
+    }
 }
+
