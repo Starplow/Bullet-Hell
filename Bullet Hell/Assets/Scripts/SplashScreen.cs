@@ -19,10 +19,10 @@ public class SplashScreen : MonoBehaviour {
 
         yield return new WaitForSeconds(2);
 
-        SceneManager.LoadScene("SplashScreen02");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
- 
-       
+
+
     }
 }
 
