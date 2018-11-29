@@ -100,16 +100,16 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    /*
+    
     private void OnCollisionEnter(Collision collision)
     {
         
-        if (collision.gameObject.tag == ("Enemy"))
+        if (collision.gameObject.name == ("Enemy"))
             SceneManager.LoadScene("DefeatScreen");
         else if (collision.gameObject.tag == ("Bullet"))
         {
             SceneManager.LoadScene("DefeatScreen");
         }
     }
-    */
+    
 }
