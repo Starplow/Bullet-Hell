@@ -104,9 +104,9 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         
-        if (collision.gameObject.name == ("Enemy"))
+        if (collision.gameObject.name == ("EasyEnemy"))
             SceneManager.LoadScene("DefeatScreen");
-        else if (collision.gameObject.tag == ("Bullet"))
+        else if (collision.gameObject.tag == ("EnemyBullet"))
         {
             SceneManager.LoadScene("DefeatScreen");
         }

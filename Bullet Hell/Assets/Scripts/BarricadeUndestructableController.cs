@@ -6,7 +6,7 @@ public class BarricadeUndestructableController : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == ("Bullet"))
+        if (collision.gameObject.tag == ("PlayerBullet"))
         {
              Destroy(collision.gameObject);
         }

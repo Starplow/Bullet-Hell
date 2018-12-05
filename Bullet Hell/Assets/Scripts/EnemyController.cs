@@ -34,13 +34,11 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.gameObject.tag == ("Player"))
         {
-           // SceneManager.LoadScene("DefeatScreen");
-            Destroy(collision.gameObject);
+              Destroy(collision.gameObject);
             
         }
-        else if (collision.gameObject.tag == ("Bullet"))
+        else if (collision.gameObject.tag == ("PlayerBullet"))
         {
-            //SceneManager.LoadScene("VictoryScreen");
             Destroy(this.gameObject);
             Destroy(collision.gameObject);
         }
