@@ -24,8 +24,8 @@ GameObject:
   - component: {fileID: 135188128084637304}
   - component: {fileID: 114343045490826694}
   m_Layer: 0
-  m_Name: EnemyBulletUndestructable
-  m_TagString: Untagged
+  m_Name: PlayerBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e513f737e7625504ca430207130018a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 2
 --- !u!135 &135188128084637304
 SphereCollider:
   m_ObjectHideFlags: 1
