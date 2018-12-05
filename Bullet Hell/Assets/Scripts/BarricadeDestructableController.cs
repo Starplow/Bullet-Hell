@@ -11,5 +11,9 @@ public class BarricadeDestructableController : MonoBehaviour {
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
+        else if (collision.gameObject.tag == ("EnemyBullet"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

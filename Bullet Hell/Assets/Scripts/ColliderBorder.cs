@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarricadeUndestructableController : MonoBehaviour {
+public class ColliderBorder : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == ("PlayerBullet"))
         {
-             Destroy(collision.gameObject);
+            Destroy(collision.gameObject);
         }
         else if (collision.gameObject.tag == ("EnemyBullet"))
         {

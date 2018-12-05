@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainEnemyController : MonoBehaviour {
 
@@ -9,10 +10,13 @@ public class MainEnemyController : MonoBehaviour {
     public float timeBetweenShots;
     private float shotCounter;
     public float bulletSpeed;
+    public float enemyHealth;
+  
     // Use this for initialization
     void Start () {
-		
-	}
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -64,13 +68,26 @@ public class MainEnemyController : MonoBehaviour {
 
         }
 
-    
-
-
-
-
-
+        
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == ("PlayerBullet"))
+        {
+            Destroy(collision.gameObject);
+            enemyHealth--;
+           
+                    
+            if (enemyHealth <= 0)
+            {
+                SceneManager.LoadScene("VictoryScreen");
+            }
+        }
 
     }
+
+
+
+    
 }
 

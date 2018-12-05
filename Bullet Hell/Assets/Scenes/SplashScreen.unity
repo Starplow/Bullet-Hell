@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 57049810}
   - component: {fileID: 57049809}
   m_Layer: 5
-  m_Name: MonikStudio
+  m_Name: Title MonikStudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -441,6 +441,10 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1255265777985684, guid: 6ea16f63b36d7434ab28b5769bb762cf, type: 2}
+      propertyPath: m_Name
+      value: Title MonikStudio
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ea16f63b36d7434ab28b5769bb762cf, type: 2}
   m_IsPrefabAsset: 0
@@ -456,7 +460,7 @@ GameObject:
   - component: {fileID: 1129362013}
   - component: {fileID: 1129362012}
   m_Layer: 5
-  m_Name: presents
+  m_Name: Title presents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -787,7 +791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d780db942d03374a9582cd534c87922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myText: {fileID: 0}
 --- !u!1001 &2084738328
 Prefab:
   m_ObjectHideFlags: 0
@@ -887,7 +890,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1654644131094174, guid: 2dc8049779ef3e04fa1fbcbcceed27c8, type: 2}
       propertyPath: m_Name
-      value: presents
+      value: Title presents
       objectReference: {fileID: 0}
     - target: {fileID: 114806897870012376, guid: 2dc8049779ef3e04fa1fbcbcceed27c8,
         type: 2}

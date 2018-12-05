@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 57049809}
   - component: {fileID: 57049811}
   m_Layer: 5
-  m_Name: BulletHell
+  m_Name: Title Bullet Hell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,7 +445,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1654644131094174, guid: 2dc8049779ef3e04fa1fbcbcceed27c8, type: 2}
       propertyPath: m_Name
-      value: BulletHell
+      value: Title Bullet Hell
       objectReference: {fileID: 0}
     - target: {fileID: 114806897870012376, guid: 2dc8049779ef3e04fa1fbcbcceed27c8,
         type: 2}
