@@ -16,11 +16,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlayerProjectile
+  - PlayerBulletCollision
+  - PlayerLevelCollision
+  - EasyEnemyLayer
+  - MainEnemyLayer
   - 
   - 
   - 

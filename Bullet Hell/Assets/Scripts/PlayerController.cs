@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     {
 
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
-        moveVelocity = moveInput * moveSpeed;
+        moveVelocity = moveInput.normalized * moveSpeed;
 
 
         // Rotate with mouse
@@ -84,14 +84,16 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+       
+        myRigidbody.velocity = moveVelocity;
 
-        myRigidbody.AddForce(moveVelocity);
         print((myRigidbody.velocity).magnitude);
         if (myRigidbody.velocity.magnitude > 21)
         {
             myRigidbody.AddForce(-myRigidbody.velocity * 10);
         }
     }
+
     public void recoil()
     {
 
@@ -101,15 +103,6 @@ public class PlayerController : MonoBehaviour
     }
 
     
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-        if (collision.gameObject.name == ("EasyEnemy"))
-            SceneManager.LoadScene("DefeatScreen");
-        else if (collision.gameObject.tag == ("EnemyBullet"))
-        {
-            SceneManager.LoadScene("DefeatScreen");
-        }
-    }
+
     
 }

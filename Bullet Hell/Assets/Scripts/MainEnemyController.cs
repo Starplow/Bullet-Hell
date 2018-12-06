@@ -85,9 +85,13 @@ public class MainEnemyController : MonoBehaviour {
         }
 
     }
+    private void FixedUpdate()
+    {
+        transform.Rotate(0, 2, 0);
+    }
 
 
 
-    
+
 }
 

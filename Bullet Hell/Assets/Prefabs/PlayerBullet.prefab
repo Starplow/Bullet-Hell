@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4322449116927438}
   - component: {fileID: 33186119782704202}
   - component: {fileID: 23237960776893662}
-  - component: {fileID: 135188128084637304}
   - component: {fileID: 114343045490826694}
-  m_Layer: 0
+  - component: {fileID: 65342126378495828}
+  m_Layer: 8
   m_Name: PlayerBullet
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1920748769267360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.873, y: 0.87, z: -2.845}
-  m_LocalScale: {x: 0.3758001, y: 0.4149942, z: 0.37588254}
+  m_LocalPosition: {x: 3.572314, y: 0.35, z: 4.6443567}
+  m_LocalScale: {x: 0.318535, y: 0.318535, z: 1.1128669}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -84,7 +84,19 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1920748769267360}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65342126378495828
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1920748769267360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114343045490826694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,16 +108,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e513f737e7625504ca430207130018a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
---- !u!135 &135188128084637304
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1920748769267360}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  speed: 5
