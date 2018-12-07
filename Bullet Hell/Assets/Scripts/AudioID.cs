@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockID : MonoBehaviour {
+public class AudioID : MonoBehaviour {
 
-    public enum BlockIDEnum
+    public enum AudioIDEnum
     {
 
         fireSound1,
         destroySound1
     }
-    public BlockIDEnum myID;
+    public AudioIDEnum myID;
 
 }
 
