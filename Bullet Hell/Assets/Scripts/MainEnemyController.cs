@@ -11,17 +11,23 @@ public class MainEnemyController : MonoBehaviour {
     private float shotCounter;
     public float bulletSpeed;
     public float enemyHealth;
-  
+
+    public Camera cam;
+    public CameraMovement Move;
+
+
     // Use this for initialization
     void Start () {
-        
+
+        Move = cam.GetComponent<CameraMovement>();
 
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-
+        
+        
 
         shotCounter -= Time.deltaTime;
         if (shotCounter <= 0)
@@ -80,7 +86,10 @@ public class MainEnemyController : MonoBehaviour {
                     
             if (enemyHealth <= 0)
             {
-                SceneManager.LoadScene("VictoryScreen");
+                Move.endLevel01 = true;
+                Destroy(this.gameObject);
+
+                //SceneManager.LoadScene("VictoryScreen");
             }
         }
 
@@ -90,7 +99,7 @@ public class MainEnemyController : MonoBehaviour {
         transform.Rotate(0, 2, 0);
     }
 
-
+  
 
 
 }
