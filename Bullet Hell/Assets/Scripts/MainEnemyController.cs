@@ -13,13 +13,13 @@ public class MainEnemyController : MonoBehaviour {
     public float enemyHealth;
 
     public Camera cam;
-    public CameraMovement Move;
+    public LevelController LevelManager;
 
 
     // Use this for initialization
     void Start () {
 
-        Move = cam.GetComponent<CameraMovement>();
+        LevelManager = cam.GetComponent<LevelController>();
 
     }
 	
@@ -82,18 +82,52 @@ public class MainEnemyController : MonoBehaviour {
         {
             Destroy(collision.gameObject);
             enemyHealth--;
-           
-                    
+                              
             if (enemyHealth <= 0)
             {
-                Move.endLevel01 = true;
-                Destroy(this.gameObject);
 
-                //SceneManager.LoadScene("VictoryScreen");
+                if (LevelManager.LevelStatus == 9)
+                {
+                    SceneManager.LoadScene("VictoryScreen");
+                }
+                else if (LevelManager.LevelStatus == 8)
+                {
+                    LevelManager.LevelStatus = 9;
+                }
+                else if (LevelManager.LevelStatus == 7)
+                {
+                    LevelManager.LevelStatus = 8;
+                }
+                else if (LevelManager.LevelStatus == 6)
+                {
+                    LevelManager.LevelStatus = 7;
+                }
+                else if (LevelManager.LevelStatus == 5)
+                {
+                    LevelManager.LevelStatus = 6;
+                }
+                else if (LevelManager.LevelStatus == 4)
+                {
+                    LevelManager.LevelStatus = 5;
+                }
+                else if (LevelManager.LevelStatus == 3)
+                {
+                    LevelManager.LevelStatus = 4;
+                }
+                else if (LevelManager.LevelStatus == 2)
+                {
+                    LevelManager.LevelStatus = 3;
+                }
+                else{
+                    LevelManager.LevelStatus = 2;
+                }
+                Destroy(this.gameObject);
+                         
             }
         }
 
     }
+
     private void FixedUpdate()
     {
         transform.Rotate(0, 2, 0);
