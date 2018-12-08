@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
     void MoveToPlayer()
     {
 
-        //Debug.DrawLine(this.transform.position, PlayerController.playerObject.transform.position);
+        Debug.DrawLine(this.transform.position, PlayerController.playerObject.transform.position);
 
         //Vector3 direction = PlayerController.playerObject.transform.position - this.transform.position;
         //direction = direction.normalized;
