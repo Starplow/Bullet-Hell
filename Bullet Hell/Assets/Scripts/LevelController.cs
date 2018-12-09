@@ -6,9 +6,10 @@ public class LevelController : MonoBehaviour {
 
     public float camSpeed;
     float step;
+    float stepA;
 
     public int LevelStatus = 1;
-    int camStatus = 1;
+   
 
     public GameObject Level02Activation;
     public GameObject Level03Activation;
@@ -37,6 +38,7 @@ public class LevelController : MonoBehaviour {
     public Transform target06;
     public Transform target07;
     public Transform target08;
+    public Transform target09;
 
 
     // Use this for initialization
@@ -48,6 +50,11 @@ public class LevelController : MonoBehaviour {
 	void Update () {
 
         step = camSpeed * Time.deltaTime;
+        if (LevelStatus == 1) {
+            stepA = 20 * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target09.position, stepA);
+        }
+
 
         if (LevelStatus == 2) {
                 Level02Activation.SetActive(true);
