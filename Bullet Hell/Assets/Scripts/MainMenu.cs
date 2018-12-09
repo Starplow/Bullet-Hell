@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour {
 
     public void TryAgain()
     {
-        SceneManager.LoadScene("Level01");
+        SceneManager.LoadScene("Levels");
     }
 
 
