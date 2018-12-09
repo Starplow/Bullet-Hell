@@ -17,11 +17,12 @@ public class PlayerCollider : MonoBehaviour {
     private void OnTriggerEnter(Collider collider)
     {
 
-        if (collider.gameObject.name == ("EasyEnemy"))
-            SceneManager.LoadScene("DefeatScreen");
+        if (collider.gameObject.name == ("EasyEnemy")) { 
+        //SceneManager.LoadScene("DefeatScreen");
+    }
         else if (collider.gameObject.tag == ("EnemyBullet"))
         {
-            SceneManager.LoadScene("DefeatScreen");
+            //SceneManager.LoadScene("DefeatScreen");
         }
     }
 
