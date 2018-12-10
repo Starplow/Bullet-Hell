@@ -21472,7 +21472,7 @@ GameObject:
   - component: {fileID: 1645945915}
   - component: {fileID: 1645945914}
   m_Layer: 11
-  m_Name: EasyEnemy (1)
+  m_Name: EasyEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -18,11 +18,11 @@ public class PlayerCollider : MonoBehaviour {
     {
 
         if (collider.gameObject.name == ("EasyEnemy")) { 
-        //SceneManager.LoadScene("DefeatScreen");
+        SceneManager.LoadScene("DefeatScreen");
     }
         else if (collider.gameObject.tag == ("EnemyBullet"))
         {
-            //SceneManager.LoadScene("DefeatScreen");
+         SceneManager.LoadScene("DefeatScreen");
         }
     }
 
