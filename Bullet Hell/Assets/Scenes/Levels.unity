@@ -2406,7 +2406,7 @@ MonoBehaviour:
   firePoint: {fileID: 153255687}
   timeBetweenShots: 0.25
   bulletSpeed: 10
-  enemyHealth: 1
+  enemyHealth: 3
   cam: {fileID: 534669904}
   LevelManager: {fileID: 0}
 --- !u!65 &153255690
@@ -3570,7 +3570,7 @@ MonoBehaviour:
   firePoint: {fileID: 196778473}
   timeBetweenShots: 0.25
   bulletSpeed: 10
-  enemyHealth: 1
+  enemyHealth: 3
   cam: {fileID: 534669904}
   LevelManager: {fileID: 0}
 --- !u!65 &196778476
@@ -9424,7 +9424,7 @@ MonoBehaviour:
   firePoint: {fileID: 679784223}
   timeBetweenShots: 0.25
   bulletSpeed: 10
-  enemyHealth: 1
+  enemyHealth: 4
   cam: {fileID: 534669904}
   LevelManager: {fileID: 0}
 --- !u!65 &679784226
@@ -10634,7 +10634,7 @@ MonoBehaviour:
   firePoint: {fileID: 733991337}
   timeBetweenShots: 0.25
   bulletSpeed: 10
-  enemyHealth: 1
+  enemyHealth: 3
   cam: {fileID: 534669904}
   LevelManager: {fileID: 0}
 --- !u!65 &733991340
@@ -20473,7 +20473,7 @@ MonoBehaviour:
   firePoint: {fileID: 1450781931}
   timeBetweenShots: 1
   bulletSpeed: 2
-  enemyHealth: 1
+  enemyHealth: 5
   cam: {fileID: 534669904}
   LevelManager: {fileID: 0}
 --- !u!65 &1450781928
@@ -22776,7 +22776,7 @@ MonoBehaviour:
   firePoint: {fileID: 1575603259}
   timeBetweenShots: 0.25
   bulletSpeed: 10
-  enemyHealth: 1
+  enemyHealth: 2
   cam: {fileID: 534669904}
   LevelManager: {fileID: 0}
 --- !u!65 &1575603262
@@ -23947,7 +23947,7 @@ MonoBehaviour:
   firePoint: {fileID: 1683027172}
   timeBetweenShots: 0.25
   bulletSpeed: 10
-  enemyHealth: 1
+  enemyHealth: 3
   cam: {fileID: 534669904}
   LevelManager: {fileID: 0}
 --- !u!65 &1683027175
@@ -26443,7 +26443,7 @@ MonoBehaviour:
   firePoint: {fileID: 1876976214}
   timeBetweenShots: 0.25
   bulletSpeed: 10
-  enemyHealth: 2
+  enemyHealth: 5
   cam: {fileID: 534669904}
   LevelManager: {fileID: 0}
 --- !u!65 &1876976217
