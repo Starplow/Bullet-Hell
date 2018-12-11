@@ -28,10 +28,10 @@ public class EnemyController : MonoBehaviour
 
         Debug.DrawLine(this.transform.position, PlayerController.playerObject.transform.position);
 
-        Vector3 direction = PlayerController.playerObject.transform.position - this.transform.position;
-        direction = direction.normalized;
-        //this.GetComponent<NavMeshAgent>().SetDestination(PlayerController.playerObject.transform.position);
-        myRigidbody.velocity = Vector3.Normalize(new Vector3(direction.x, 0f, direction.z)) * enemySpeed;
+        //Vector3 direction = PlayerController.playerObject.transform.position - this.transform.position;
+        //direction = direction.normalized;
+        this.GetComponent<NavMeshAgent>().SetDestination(PlayerController.playerObject.transform.position);
+        //myRigidbody.velocity = Vector3.Normalize(new Vector3(direction.x, 0f, direction.z)) * enemySpeed;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -43,6 +43,7 @@ public class EnemyController : MonoBehaviour
         }
         else if (collision.gameObject.tag == ("PlayerBullet"))
         {
+            
             Destroy(this.gameObject);
             Destroy(collision.gameObject);
         }
