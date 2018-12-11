@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/VictoryScreen.unity
     guid: fe5c5fbceab008246ac0532fd363b601
   - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 5e6e85213e53bf94f9889423e706b6e4
+  - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: ea09fc646e4505d46b1297e2f35265e2
   m_configObjects: {}
