@@ -7,8 +7,8 @@ public class AudioID : MonoBehaviour {
     public enum AudioIDEnum
     {
 
-        fireSound1,
-        destroySound1
+        deathEasyEnemy,
+        deathMainEnemy
     }
     public AudioIDEnum myID;
 

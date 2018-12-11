@@ -35,9 +35,11 @@ public class MainEnemyController : MonoBehaviour {
 
 
             shotCounter = timeBetweenShots;
-            BulletController destroyableBullet = Instantiate(bulletDestroyable, firePoint.position, firePoint.rotation) as BulletController;
-            destroyableBullet.speed = bulletSpeed;
 
+
+            BulletController destroyableBullet = Instantiate(bulletDestroyable, firePoint.position, firePoint.rotation) as BulletController;
+
+            destroyableBullet.speed = bulletSpeed;
 
 
 
@@ -46,9 +48,12 @@ public class MainEnemyController : MonoBehaviour {
             //Quaternion rotation = Quaternion.Euler(0, 90, 0);
 
 
-            shotCounter = timeBetweenShots;
+
+
+
             BulletController destroyableBullet2 = Instantiate(bulletDestroyable, firePoint.position, firePoint.rotation) as BulletController;
             destroyableBullet2.transform.Rotate(0, 90, 0);
+
             destroyableBullet2.speed = bulletSpeed;
 
 
@@ -56,19 +61,19 @@ public class MainEnemyController : MonoBehaviour {
 
 
 
-            shotCounter = timeBetweenShots;
             BulletController destroyableBullet3 = Instantiate(bulletDestroyable, firePoint.position, firePoint.rotation) as BulletController;
             destroyableBullet3.transform.Rotate(0, 180, 0);
+
             destroyableBullet3.speed = bulletSpeed;
 
 
 
 
 
-
-            shotCounter = timeBetweenShots;
             BulletController destroyableBullet4 = Instantiate(bulletDestroyable, firePoint.position, firePoint.rotation) as BulletController;
             destroyableBullet4.transform.Rotate(0, 270, 0);
+
+
             destroyableBullet4.speed = bulletSpeed;
 
 
