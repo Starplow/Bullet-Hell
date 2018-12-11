@@ -93,7 +93,7 @@ public class MainEnemyController : MonoBehaviour {
 
                 if (LevelManager.LevelStatus == 9)
                 {
-                    SceneManager.LoadScene("VictoryScreen");
+                    SceneManager.LoadScene("Credits");
                 }
                 else if (LevelManager.LevelStatus == 8)
                 {
