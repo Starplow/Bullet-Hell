@@ -17,7 +17,8 @@ public class PlayerCollider : MonoBehaviour {
     private void OnTriggerEnter(Collider collider)
     {
 
-        if (collider.gameObject.name == ("EasyEnemy")) { 
+        if (collider.gameObject.tag == ("EasyEnemy")) { 
+
         SceneManager.LoadScene("DefeatScreen");
         }
         else if (collider.gameObject.tag == ("EnemyBullet"))
