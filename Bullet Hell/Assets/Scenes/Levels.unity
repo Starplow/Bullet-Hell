@@ -3127,7 +3127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &185018323
 Transform:
   m_ObjectHideFlags: 0
@@ -5844,7 +5844,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1941471301091616, guid: 4e22e0f9c453f9a4e877638892dfb1ca, type: 2}
       propertyPath: m_Name
-      value: EasyEnemy (5)
+      value: EasyEnemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e22e0f9c453f9a4e877638892dfb1ca, type: 2}
@@ -5863,7 +5863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &440002664
 Transform:
   m_ObjectHideFlags: 0
@@ -7393,7 +7393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &537272971
 Transform:
   m_ObjectHideFlags: 0
@@ -18907,7 +18907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1349892079
 Transform:
   m_ObjectHideFlags: 0
@@ -23854,7 +23854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1679634841
 Transform:
   m_ObjectHideFlags: 0
@@ -27653,7 +27653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1955947276
 Transform:
   m_ObjectHideFlags: 0
@@ -27789,7 +27789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1970908553
 Transform:
   m_ObjectHideFlags: 0
@@ -29302,7 +29302,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1941471301091616, guid: 4e22e0f9c453f9a4e877638892dfb1ca, type: 2}
       propertyPath: m_Name
-      value: EasyEnemy (6)
+      value: EasyEnemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e22e0f9c453f9a4e877638892dfb1ca, type: 2}
@@ -29496,7 +29496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2115006057
 Transform:
   m_ObjectHideFlags: 0
