@@ -11,7 +11,8 @@ public class MainEnemyController : MonoBehaviour {
     private float shotCounter;
     public float bulletSpeed;
     public float enemyHealth;
-
+    float sizePerHealth = 0.4f;
+    float minSize = 0.6f;
     public Camera cam;
     public LevelController LevelManager;
 
@@ -20,7 +21,7 @@ public class MainEnemyController : MonoBehaviour {
     void Start () {
 
         LevelManager = cam.GetComponent<LevelController>();
-
+        this.transform.localScale = Vector3.one * (minSize + enemyHealth * sizePerHealth);
     }
 	
 	// Update is called once per frame
@@ -87,7 +88,9 @@ public class MainEnemyController : MonoBehaviour {
         {
             Destroy(collision.gameObject);
             enemyHealth--;
-                              
+            this.transform.localScale = Vector3.one * (minSize + enemyHealth * sizePerHealth);
+
+
             if (enemyHealth <= 0)
             {
 
@@ -126,6 +129,7 @@ public class MainEnemyController : MonoBehaviour {
                 else{
                     LevelManager.LevelStatus = 2;
                 }
+
                 Destroy(this.gameObject);
                          
             }
